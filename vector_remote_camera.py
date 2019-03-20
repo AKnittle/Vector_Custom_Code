@@ -28,7 +28,7 @@ def move_robot(robot, speed):
 def main():
     with anki_vector.Robot(show_viewer=True) as robot:
         t1 = threading.Thread(target=display_camera, args=(robot, 5,))
-        t2 = threading.Thread(target=move_robot, args=(robot, 150,))
+        t2 = threading.Thread(target=move_robot, args=(robot, 100,))
 
         t1.start()
         t2.start()
